@@ -13,7 +13,7 @@ trait AuthorizedActionComponent {
   val authenticationKeyService: AuthenticationKeyService
 
   private def unauthorized: Future[Result] = {
-    Logger.error("AuthorizedHeaderAction unauthorized")
+    Logger.error("AuthorizedAction unauthorized")
     Future.successful(Unauthorized)
   }
 
